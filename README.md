@@ -214,9 +214,16 @@ Alineación vertical y horizontal.
 
 
 
+
+
+
+
+
 float: left ---caja
 #wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+<td class="col-3 box">    <img [src]="liq.imagenes" class="img-thumbnail" alt="Responsive"></td>
