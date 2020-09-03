@@ -212,6 +212,9 @@ heroes.length == 0 &&
 
 Alineación vertical y horizontal.
 
+
+
+float: left ---caja
 #wrapper {
   display: flex;
   align-items: center;
