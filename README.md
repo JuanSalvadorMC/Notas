@@ -227,3 +227,64 @@ float: left ---caja
 }
 
 <td class="col-3 box">    <img [src]="liq.imagenes" class="img-thumbnail" alt="Responsive"></td>
+
+style="background-image:url('slide/ed-sheeran.jpg'">
+Abrir archivo: CTRL + O
+Abrir carpeta: CTRL + K + CTRL + O
+Guardar archivo: CTRL + S
+Crear un nuevo archivo: CTRL + N
+Cerrar archivo abierto: CTRL + W
+Cerrar archivos abiertos: CTRL + K, CTRL + W
+Deshacer: CTRL + Z
+Rehacer: CTRL + Y
+Buscar en archivo abierto: CTRL + F
+Buscar en archivos: CTRL + SHIFT + F
+Reemplazar: CTRL + H
+Seleccionar todo: CTRL + A
+Pantalla completa: F11
+Acercar Zoom: CTRL + +
+Alejar Zoom: CTRL + –
+Abrir paleta de comandos: CTRL + SHIFT + P
+Abrir explorador de archivos: CTRL + SHIFT + E
+Acceder a extensiones (instaladas y para instalar): CTRL + SHIFT + X
+Debug: CTRL + SHIFT + D
+Corte de palabras (Word Wrap): ALT + Z
+Abrir terminal integrado: CTRL + Ñ
+Ver/editar atajos de teclado: CTRL + K+ CTRL + S
+Buscar archivo: Ctrl+p
+Mayús + Alt + Flecha abajo / Flecha arriba	Copiar línea arriba / abajo
+Ctrl + Mayús + K	Eliminar línea
+Ctrl + Fin	Ir al final del archivo
+Ctrl + Inicio	Ir al principio del archivo
+Alt + PgUp / PgDn	Desplazarse pantalla arriba / abajo
+Ctrl + Mayús + Tabulador	Navegar por el historial de archivos editados
+Alt + Flecha izquierda / Flecha derecha	:Retroceder / avanzar en lineas editadas
+Ctrl+Shift+S  :Save As...
+Ctrl+K, S : Save All
+SHift + Alt +A: comentar
+Ctrl+ Shift+P opciones
+lista de short cuts Ctrl +k+s
+shift + Alt arriba / abajo copiar linea 
+ctrl + l selecciona toda la linea
+ctrl + alt + clic multi cursores
+ctrl + d multicursor
+^ nivel arriba
+() agrupacion
+{}texto
+$ incrementar
+[] atributos 
+
+107.180.43.14
+hf6ubely41u5
+**
+cd ~/app-node/server
+pkill node
+nohup node server.js & 
+iesSystems*20
+
+
+
+
+
+
+
