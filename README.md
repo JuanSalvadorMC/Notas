@@ -3,7 +3,7 @@ display :block;
 visibility:hidden;   Ocultar elemento
 
 <br/>           salto de linea
-<hr>            linea
+<hr>            linea		
 <strong>        texto en negritas
 <em>            texto en curcibas
 <i>      italica (medio cursiba)
@@ -276,15 +276,17 @@ $ incrementar
 
 107.180.43.14
 hf6ubely41u5
+iesSystems*20
 **
 cd ~/app-node/server
 pkill node
 nohup node server.js & 
+
 iesSystems*20
 
 
 
 
 
-
+ height: 100vh;
 
