@@ -290,3 +290,6 @@ iesSystems*20
 
  height: 100vh;
 
+ position:absolute;
+                top:50%;
+                left:50%; aliniar horizontal
