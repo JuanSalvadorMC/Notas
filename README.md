@@ -39,7 +39,7 @@ multimplicador con varias etiquetas tr*2>td*3
           
           <tr>
               <td>Juan</td>
-              <td colspan="2">Martinez</td>
+              <td colspan="2">Martinez</td>	
              
           </tr>
 </table>
@@ -285,7 +285,7 @@ nohup node server.js &
 iesSystems*20
 
 
-
+&nbsp; espacio
 
 
  height: 100vh;
