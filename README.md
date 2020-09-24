@@ -269,12 +269,13 @@ ctrl + l selecciona toda la linea
 ctrl + alt + clic multi cursores
 ctrl + d multicursor
 ^ nivel arriba
-() agrupacion
+() agrupacion	
 {}texto
 $ incrementar
 [] atributos 
 
-107.180.43.14
+187.190.28.220
+hf6ubely41u5
 hf6ubely41u5
 iesSystems*20
 **
