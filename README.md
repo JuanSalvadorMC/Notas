@@ -273,21 +273,22 @@ ctrl + d multicursor
 {}texto
 $ incrementar
 [] atributos 
-
+---------------------------------------------------------------------
 187.190.28.220
+
 hf6ubely41u5
 hf6ubely41u5
+hf6ubely41u5
+
+iesSystems*20
 iesSystems*20
 **
-cd ~/app-node/server
+cd ~/app-node
 pkill node
-nohup node server.js & 
-
-iesSystems*20
-
+nohup node ./server/server.js & 
 
 &nbsp; espacio
-
+--------------------------------------------------------------------
 
  height: 100vh;
 
