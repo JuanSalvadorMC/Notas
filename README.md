@@ -220,7 +220,7 @@ Alineación vertical y horizontal.
 
 
 float: left ---caja
-#wrapper {
+.centrar{
   display: flex;
   align-items: center;
   justify-content: center;
