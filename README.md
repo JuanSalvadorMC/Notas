@@ -295,3 +295,18 @@ nohup node ./server/server.js &
  position:absolute;
                 top:50%;
                 left:50%; aliniar horizontal
+		
+		
+		
+	  object-fit: cover;
+  filter: brightness(80%);
+  cursor: pointer;
+  transition: 1s;	
+		
+		
+		
+		
+		
+		
+		
+		
