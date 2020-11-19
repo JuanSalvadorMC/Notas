@@ -304,6 +304,9 @@ nohup node ./server/server.js &
   cursor: pointer;
   transition: 1s;	
 		
+		user-select: none;
+		 cursor: pointer;
+		
 		
 		
 		
