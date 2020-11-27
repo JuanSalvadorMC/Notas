@@ -312,5 +312,15 @@ nohup node ./server/server.js &
 		
 		
 		
-		
+		position: fixed; /*Fixed ya que queremos que la posición sea en relación al navegador*/
+top: 0; /*El valor 0 indica que va a quedar arriba de todo*/
+
+
+
+nav {
+position: fixed; /*Fixed ya que queremos que la posición sea en relación al navegador*/
+top: 0; /*El valor 0 indica que va a quedar arriba de todo*/
+left: 0; /*Para que el menu se ubique siempre en la parte izquierda de la pantalla*/
+width: 100%; /*100% para que ocupe todo el ancho del navegador*/
+}
 		
