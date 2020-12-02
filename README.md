@@ -218,7 +218,8 @@ Alineación vertical y horizontal.
 
 
 
-
+ display: none;
+    float: both;
 
 float: left ---caja
 .centrar{
