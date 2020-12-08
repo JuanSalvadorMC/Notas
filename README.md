@@ -334,4 +334,13 @@ VARIABLES CCS
 }
 
 font-size : var(--variabley);
+
+--gColumns:repeat(4,1fr);
+--gGap:4rem;
+
+.grid{
+display:grid;
+grid-template-columns:vas(--gColumns);
+grid-gap:var(--gGap);
+}
 		
