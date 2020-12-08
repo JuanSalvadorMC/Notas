@@ -324,4 +324,12 @@ top: 0; /*El valor 0 indica que va a quedar arriba de todo*/
 left: 0; /*Para que el menu se ubique siempre en la parte izquierda de la pantalla*/
 width: 100%; /*100% para que ocupe todo el ancho del navegador*/
 }
+
+VARIABLES CCS
+:root {
+--variabley:32 px:
+@media screen and (min-width:770px){
+--variabley:42 px:
+}
+}
 		
