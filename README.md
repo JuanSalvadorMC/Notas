@@ -332,4 +332,6 @@ VARIABLES CCS
 --variabley:42 px:
 }
 }
+
+font-size : var(--variabley);
 		
