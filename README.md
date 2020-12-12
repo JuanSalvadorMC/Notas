@@ -343,4 +343,13 @@ display:grid;
 grid-template-columns:vas(--gColumns);
 grid-gap:var(--gGap);
 }
+
+
+position
+
+static//default
+
+realative // se mueve apartir de el contenedor en el que este
+absolute// se ensimay pierde su espaci en la pantalla
+fixed// se mueve partir de toda la pnatalla
 		
