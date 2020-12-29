@@ -152,7 +152,7 @@ media query
 ///////ANGULAR
 --skipTests
 	ng serve --port 4201
-ng c newcomponent --spec false
+ng g c newapp -is --skipTests
 
 npm audit fix
 eliminar carpeta node_modules
