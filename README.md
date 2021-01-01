@@ -180,7 +180,7 @@ const // no puede ser modificada
 
 Number(X);/  transforma numeros string a enteros
 parseInt(X);/  transforma numeros string a enteros
-parsefloat(X);/  transforma numeros decimal string a decimal
+parseFloat(X);/  transforma numeros decimal string a decimal
 String(X); // transforma numeros a string 
 .toString();// transforma numeros a string 
 
@@ -352,4 +352,23 @@ static//default
 realative // se mueve apartir de el contenedor en el que este
 absolute// se ensimay pierde su espaci en la pantalla
 fixed// se mueve partir de toda la pnatalla
+
+disable estilos
+------------------------------------------------
+.btn-colorRe:disabled,
+button[disabled]{
+  background: #ffffff !important;
+     border: 1px solid #999999;
+     background-color: #cccccc;
+     color: #666666 !important;
+}
+.btn-colorRe:disabled:hover,
+button[disabled]{
+  background: #ffffff !important;
+     border: 1px solid #999999;
+     background-color: #cccccc;
+     color: #666666 !important;
+}
+
+
 		
