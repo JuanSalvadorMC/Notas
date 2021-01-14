@@ -150,6 +150,7 @@ media query
 }
 
 ///////ANGULAR
+slc-- limpiar consola
 --skipTests
 	ng serve --port 4201
 ng g c newapp -is --skipTests
