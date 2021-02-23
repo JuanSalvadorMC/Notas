@@ -151,10 +151,11 @@ media query
 
 ///////ANGULAR
 slc-- limpiar consola
+ng n newapp
 --skipTests
 	ng serve --port 4201
-ng g c newapp -is --skipTests
-
+ng g c newcomponent-is --skipTests
+ng g m modules
 npm audit fix
 eliminar carpeta node_modules
 
