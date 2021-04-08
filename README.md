@@ -372,5 +372,19 @@ button[disabled]{
      color: #666666 !important;
 }
 
+:root {
+  --azul: #1b3e69;
+  --gris:rgb(190, 190, 190);
+  --verde:#60b622;
+}
+
+    @media screen and (orientation: portrait){
+
+        .precios{
+            width: 99%;
+            border-radius: 2px;
+        }
+    }
+
 
 		
