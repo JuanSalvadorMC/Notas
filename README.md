@@ -385,6 +385,6 @@ button[disabled]{
             border-radius: 2px;
         }
     }
-console.log(`${porcentaje} = (d.row(a)/opcional)`);
+console.log(`${porcentaje} = (${d.row(a)]/${opcional})`);
 
 		
