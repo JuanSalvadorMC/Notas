@@ -196,6 +196,9 @@ isNan(numero1)//devuelve un tru o false si la var es diferente de int
   var texto="hola";
   var nuemro="23435";
 
+	guardar en local storage
+	localStorage.setItem("usuarioBase", validar); 
+	usuarioBase=localStorage.getItem("usuarioBase");
 
 console.log( texto.toString()    );
 console.log( texto.toLowerCase()  );
