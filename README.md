@@ -82,6 +82,9 @@ Swal.fire(
   'You clicked the button!',
   'success'
 )
+:nth-child(even){
+  background-color: rgb(238, 238, 238);
+}
 
 
 ////Selector general
