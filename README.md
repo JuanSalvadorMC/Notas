@@ -152,21 +152,24 @@ media query
     }
 }
 
-///////ANGULAR
+//////////////////////ANGULAR/////////////////////ANGULAR//////////////////////////ANGULAR/////////////////////////ANGULAR//////////////
 slc-- limpiar consola
 ng n newapp
 --skipTests
-	ng serve --port 4201
+ng serve --port 4201
+ng serve -o
 ng g c newcomponent-is --skipTests
 ng g m modules
+ng serve -c qa
+ng serve --configuration=qa
+	
 npm audit fix
 eliminar carpeta node_modules
-
 npm uninstall @angular-devkit/build-angular
-
 npm install @angular-devkit/build-angular@0.13.0
 
-///////////////////////////JAVASCRIPT
+
+/////////////JAVASCRIPT//////////////JAVASCRIPT///////////////////JAVASCRIPT///////////////JAVASCRIPT//////////////JAVASCRIPT/////////////////////////////
 <script>
 </script>
 
