@@ -395,5 +395,8 @@ button[disabled]{
         }
     }
 console.log(`${porcentaje} = (${d.row(a)]/${opcional})`);
+	
+	
+	ntlf become484
 
 		
