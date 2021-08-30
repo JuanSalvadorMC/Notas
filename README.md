@@ -398,5 +398,11 @@ console.log(`${porcentaje} = (${d.row(a)]/${opcional})`);
 	
 	
 	ntlf become484
+	
+	
+document.getElementById('searchd').value='que onda ya lo automatice 3';
+setTimeout(()=>{
 
+document.getElementById('search-icon-legacyd').click();
+},2000)
 		
