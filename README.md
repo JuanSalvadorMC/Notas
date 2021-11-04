@@ -183,11 +183,11 @@ modo estricto
 'use strict'
 
 let ////vive solo en el bloque(llaves) donde es declarada
-var /// vive en todo el codigo
+var /// vive en todo el codigo``
 const // no puede ser modificada
 
 Number(X);/  transforma numeros string a enteros
-parseInt(X);/  transforma numeros string a enteros
+parseInt(X);/  transforma numeros string a enteros``
 parseFloat(X);/  transforma numeros decimal string a decimal
 String(X); // transforma numeros a string 
 .toString();// transforma numeros a string 
@@ -386,6 +386,8 @@ button[disabled]{
   --gris:rgb(190, 190, 190);
   --verde:#60b622;
 }
+	landscape horizontal
+	portrait vertical
 
     @media screen and (orientation: portrait){
 
