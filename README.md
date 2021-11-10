@@ -408,3 +408,46 @@ setTimeout(()=>{
 document.getElementById('search-icon-legacyd').click();
 },2000)
 		
+CSS GRID **************************************************************
+	  /* declaracion del tipo de Dispaly */
+        display: grid;
+
+        /* ordenar los items */
+        justify-content: space-evenly;
+        align-items: center;
+
+        /* Dimenciones internas del item */
+        justify-self: stretch;
+        justify-self: stretch;
+        /* delaracion de las columnas y filas */
+        grid-template-columns: 1fr 300px minmax(100px, 2fr);
+        grid-template-rows: repeat(100px, auto);
+        grid-template-areas: "header 		header 		header"
+						 "sidebar-1 	contenido 	sidebar-2"
+						 "sidebar-1 	widgets 	sidebar-2"
+						 "footer 		footer 		footer";
+
+                         /* separar items */
+        grid-gap: 20px;
+        /* espacio de los items */
+        grid-column: span 3;
+        grid-column-start: sidebar -1;
+        grid-column: sidebar -1;
+        grid-column-end: header;
+        grid-row: 1/4;
+        /* sub grid para alinear contenido interno de los items */
+        grid-template-rows: subgrid;
+        grid-template-columns: subgrid;
+        /* items implicitos o por default */
+        grid-auto-rows: 400px;
+        grid-auto-columns: 2fr;
+        /* orden de los items */
+        grid-auto-flow: row;
+        /* Rellenar espacios */
+        grid-auto-flow: dense;
+        /* convinacion de formatos de flow */
+        grid-auto-flow: column dense;
+        /* auto fill equivalente a un grap */
+        grid-template-columns: repeat(auto-fill,minmax(100px, 1fr));
+        /*  auto fit equivalente a un grap pero con tamaños dinamicos de item*/
+        grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
