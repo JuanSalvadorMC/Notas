@@ -321,7 +321,7 @@ nohup node ./server/server.js &
 		
 		
 		
-		
+		//@ts-check
 		
 		
 		position: fixed; /*Fixed ya que queremos que la posición sea en relación al navegador*/
