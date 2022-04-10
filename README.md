@@ -451,3 +451,13 @@ CSS GRID **************************************************************
         grid-template-columns: repeat(auto-fill,minmax(100px, 1fr));
         /*  auto fit equivalente a un grap pero con tamaños dinamicos de item*/
         grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+	
+	
+	
+	
+	/////////////////////////////////////////////////////////////////////// GIT  ////////////////////////////////////////////////////////////////////////////
+	
+	
+	git pull  - actualiza repositorio local
+	
+	git checkout  - verifica la rama en la que te encuentras
