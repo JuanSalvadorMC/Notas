@@ -461,3 +461,39 @@ CSS GRID **************************************************************
 	git pull  - actualiza repositorio local
 	
 	git checkout  - verifica la rama en la que te encuentras
+
+
+
+ bajar un repo
+
+ $ git clone https://gitlab.colaboracionsimba.net/captacion/sistemas-centrales-captacion/portalplataformacampanias/bdplataformacampanias.git
+
+
+  git branch -a ver ramas existentes
+
+
+ 
+cambio de rama
+git checkout LEACAP-384_integracion_bd
+
+
+ver cambios
+git status
+
+agregar todos los cambios
+git add.
+
+agregar  solo un cambio
+git add  PAQUETES/20220726_PAALTACAMPANIAS.TXT
+
+crear commit
+git commit -m 'LEACAP-404 -se sube paquete marcaje prod'
+
+
+revertir commit
+git reset --soft HEAD~1
+
+subir cambio
+git push
+
+
