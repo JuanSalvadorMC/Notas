@@ -51,6 +51,14 @@ poner un links
 -----
 CSS////////CSS////////CSS////////CSS////////////////CSS////////CSS////////CSS////////CSS////////CSS////////
 ------
+
+
+borrrar scroll
+overflow-y: hidden;
+
+
+
+
 *{}//aplica para todo
 float:none///sin reglas
 
