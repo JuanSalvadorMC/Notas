@@ -57,7 +57,7 @@ borrrar scroll
 overflow-y: hidden;
 
 
-
+&nsbp; 
 
 *{}//aplica para todo
 float:none///sin reglas
