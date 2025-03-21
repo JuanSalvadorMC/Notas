@@ -1,4 +1,14 @@
 # Notas
+
+
+COmando caprua de pantalla windows
+
+
+Windows + Shift + S
+
+
+
+
 display :block;
 visibility:hidden;   Ocultar elemento
 
