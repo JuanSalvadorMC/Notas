@@ -337,16 +337,19 @@ grid-gap:var(--gGap);
 
 <ol>   + <li> lista numerada
 <ul>  +  <li> lista NO numerada
-
+```
+```bash
 <td class="col-3 box">    <img [src]="liq.imagenes" class="img-thumbnail" alt="Responsive"></td>
 style="background-image:url('slide/ed-sheeran.jpg'">
-~/
-
+```
+```bash
 <img src="direccion" alt="sub título" title="padrino"
 width="" height="200px"> imagenes
-
+```
+```bash
 <a href="https://www.google.com/" target="_blank" title="link machin"> Link</a>  /* abrir en nueva ventana */
-
+```
+```bash
 <span></span> /* etiqueta sin propiedad */
 
 <blockquote></blockquote> /* cita de texto */
