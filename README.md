@@ -11,30 +11,102 @@ Windows + Shift + S
 ### CSS
 
 ```bash
-display: block;
+display: block;  /* Ocupa todo el ancho disponible al 100% */
 ```
- /* Ocultar elemento */
+
 ```bash
 visibility: hidden;   /* Ocultar elemento */
 ```
 ```bash
+:nth-child(even){
+  background-color: rgb(238, 238, 238);
+}
+////Selector general
+*{
+}
+```
+		
+<p> Alineación vertical y horizontal. </p>
+```bash
+ display: none;
+    float: both;
+float: left ---caja
+.centrar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+<td class="col-3 box">    <img [src]="liq.imagenes" class="img-thumbnail" alt="Responsive"></td>
+style="background-image:url('slide/ed-sheeran.jpg'">
+```
+
+```bash
+/* Selector de etiqueta */
+h1 {
+}
+body footer h1 {
+}
+////Selector de id
+#id{
+}
+////Selector de clase class
+.class class1{
+}
+////Selector de atributo
+#selector etiqueta {
+}
+input[type="text"]{
+    margin: auto;
+}
+////Selectores hijos o por nivel solo se aplica a etiiquetas del nivel esepecificado
+#selector ul> li> a {
+}
+dysplay: block;
+*{
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bolder;
+  text-transform: uppercase;----> mayuscula
+}
+dashes= punteeado
+CSS sigue un sitema similar a la programacion las lineas escritas al final de el codigo son las que definiran las propiedades finales
+Importar fuentes descargadas
+@font-face{
+    src: ;
+    font-family: ;
+}
+media query
+@media screen and (min-width:600px){
+    body{
+     background: yellow;
+    }
+}
+```
+
+### HTML5
+
+```bash
 <br/>         /*  salto de línea */
 ```
+
 ```bash
-<hr>            línea		
+<hr>            /*  línea		*/
 ```
 ```bash
-<strong>        texto en negritas
+<strong>      /*    texto en negritas*/
 ```
 ```bash
-<em>            texto en cursivas
+<em>             /* texto en cursivas*/
 ```
 ```bash
-<i>      itálica (medio cursiva)
+<i>     /*   itálica (medio cursiva)*/
 ```
 ```bash
-<b>    negritas
-```<u>…</u>subrayado
+<b>    negritas </b> /*  texto en negritas*/
+
+```
+```bash
+<u>…</u>subrayado
 <span >         maquetación
 <blockquote>    cita texto centrado
 
@@ -95,9 +167,165 @@ box-shadow: 2px 2px 17px 12px #117A65 ;
 height: 600px;
 font-weight: bold;
 font-family: Helvetica;
+ height: 100vh;
+git branch -a /* ver ramas existentes */
+ position:absolute;
+git checkout LEACAP-384_integracion_bd /* cambio de rama */
+                top:50%;
+                left:50%; aliniar horizontal
+                
+                
+                
+          object-fit: cover;
+  filter: brightness(80%);
+  cursor: pointer;
+  transition: 1s;        
+                
+                user-select: none;
+                 cursor: pointer;
+                
+                
+                
+                //@ts-check
+                
+                
+                position: fixed; /*Fixed ya que queremos que la posición sea en relación al navegador*/
+top: 0; /*El valor 0 indica que va a quedar arriba de todo*/
+git status /* ver cambios */
+git add . /* agregar todos los cambios */
+nav {
+git add PAQUETES/20220726_PAALTACAMPANIAS.TXT /* agregar solo un cambio */
+position: fixed; /*Fixed ya que queremos que la posición sea en relación al navegador*/
+top: 0; /*El valor 0 indica que va a quedar arriba de todo*/
+left: 0; /*Para que el menu se ubique siempre en la parte izquierda de la pantalla*/
+width: 100%; /*100% para que ocupe todo el ancho del navegador*/
+}
+VARIABLES CCS
+git commit -m 'LEACAP-404 -se sube paquete marcaje prod' /* crear commit */
+:root {
+--variabley:32 px:
+@media screen and (min-width:770px){
+--variabley:42 px:
+}
+}
+font-size : var(--variabley);
+git reset --soft HEAD~1 /* revertir commit */
+--gColumns:repeat(4,1fr);
+git push /* subir cambio */
+--gGap:4rem;
+```
+```bash
+.grid{
+---
+display:grid;
+grid-template-columns:vas(--gColumns);
+grid-gap:var(--gGap);
+}
+position
+static//default
+realative // se mueve apartir de el contenedor en el que este
+absolute// se ensimay pierde su espaci en la pantalla
+fixed// se mueve partir de toda la pnatalla
+disable estilos
+------------------------------------------------
+.btn-colorRe:disabled,
+button[disabled]{
+  background: #ffffff !important;
+     border: 1px solid #999999;
+     background-color: #cccccc;
+     color: #666666 !important;
+}
+.btn-colorRe:disabled:hover,
+button[disabled]{
+  background: #ffffff !important;
+     border: 1px solid #999999;
+     background-color: #cccccc;
+     color: #666666 !important;
+}
+:root {
+  --azul: #1b3e69;
+  --gris:rgb(190, 190, 190);
+  --verde:#60b622;
+}
+        landscape horizontal
+        portrait vertical
+    @media screen and (orientation: portrait){
+        .precios{
+            width: 99%;
+            border-radius: 2px;
+        }
+    }
+console.log(`${porcentaje} = (${d.row(a)]/${opcional})`);
+       ```
+   ```bash     
+
+        
+        
+document.getElementById('searchd').value='que onda ya lo automatice 3';
+```
+```bash
+setTimeout(()=>{
+document.getElementById('search-icon-legacyd').click();
+},2000);
+```
+      ```bash          
+CSS GRID **************************************************************
+          /* declaracion del tipo de Dispaly */
+        display: grid;
+        /* ordenar los items */
+        justify-content: space-evenly;
+        align-items: center;
+        /* Dimenciones internas del item */
+        justify-self: stretch;
+        justify-self: stretch;
+        /* delaracion de las columnas y filas */
+        grid-template-columns: 1fr 300px minmax(100px, 2fr);
+        grid-template-rows: repeat(100px, auto);
+        grid-template-areas: "header                 header                 header"
+                                                 "sidebar-1         contenido         sidebar-2"
+                                                 "sidebar-1         widgets         sidebar-2"
+                                                 "footer                 footer                 footer";
+                         /* separar items */
+        grid-gap: 20px;
+        /* espacio de los items */
+        grid-column: span 3;
+        grid-column-start: sidebar -1;
+        grid-column: sidebar -1;
+        grid-column-end: header;
+        grid-row: 1/4;
+        /* sub grid para alinear contenido interno de los items */
+        grid-template-rows: subgrid;
+        grid-template-columns: subgrid;
+        /* items implicitos o por default */
+        grid-auto-rows: 400px;
+        grid-auto-columns: 2fr;
+        /* orden de los items */
+        grid-auto-flow: row;
+        /* Rellenar espacios */
+        grid-auto-flow: dense;
+        /* convinacion de formatos de flow */
+        grid-auto-flow: column dense;
+        /* auto fill equivalente a un grap */
+        grid-template-columns: repeat(auto-fill,minmax(100px, 1fr));
+        /*  auto fit equivalente a un grap pero con tamaños dinamicos de item*/
+        grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+        /* auto fill equivalente a un grap */
+        grid-template-columns: repeat(auto-fill,minmax(100px, 1fr));
+        /* auto fit equivalente a un grap pero con tamaños dinamicos de item*/
+        grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+        /* auto fill equivalente a un grap */
+
 ```
 
 ### Angular
+
+```bash
+Swal.fire(
+  'Good job!',
+  'You clicked the button!',
+  'success'
+);
+```
 
 ```bash
 slc -- limpiar consola
@@ -207,6 +435,11 @@ Shift + Alt arriba / abajo: Copiar línea
 Ctrl + L: Selecciona toda la línea
 Ctrl + Alt + Clic: Multi cursores
 Ctrl + D: Multicursor
+^ nivel arriba
+() agrupacion        
+{}texto
+$ incrementar
+[] atributos
 ```
 
 ### GIT
