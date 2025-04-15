@@ -25,8 +25,9 @@ visibility: hidden;   /* Ocultar elemento */
 *{
 }
 ```
-		
+		```bash
 <p> Alineación vertical y horizontal. </p>
+```
 ```bash
  display: none;
     float: both;
@@ -81,72 +82,11 @@ media query
      background: yellow;
     }
 }
-```
 
-### HTML5
 
-```bash
-<br/>         /*  salto de línea */
-```
 
-```bash
-<hr>            /*  línea		*/
-```
-```bash
-<strong>      /*    texto en negritas*/
-```
-```bash
-<em>             /* texto en cursivas*/
-```
-```bash
-<i>     /*   itálica (medio cursiva)*/
-```
-```bash
-<b>    negritas </b> /*  texto en negritas*/
-
-```
-```bash
-<u>…</u>subrayado
-<span >         maquetación
-<blockquote>    cita texto centrado
-
-<ol>   + <li> lista numerada 
-<ul>  +  <li> lista NO numerada
-border: 2px solid  rgb(8, 177, 154); 
-
-~/
-
-<img src="direccion" alt="sub título" title="padrino" 
-width="" height="200px"> imagenes
-
-<a href="https://www.google.com/" target="_blank" title="link machin"> Link</a>  /* abrir en nueva ventana */
-
-<span></span> /* etiqueta sin propiedad */
-
-<blockquote></blockquote> /* cita de texto */
-multiplicar td*3
-
-multiplicador con varias etiquetas tr*2>td*3
-
-tabla 
-<table  border="1"  >
-        <tr>
-         <th>Nombre</th>
-         <td>Apellido</td>
-         <th>País</th>
-          
-          <tr>
-              <td>Juan</td>
-              <td colspan="2">Martínez</td>	
-          </tr>
-</table>
-
-poner un link 
-<a href="C:/Users/Salvador/Desktop/HTML/eje4.html" target="_blank">Contacto</a>
 
 overflow-y: hidden; /* borrar scroll */
-
-&nsbp; 
 
 /* aplica para todo */
 *{}
@@ -200,8 +140,81 @@ top: 0; /*El valor 0 indica que va a quedar arriba de todo*/
 left: 0; /*Para que el menu se ubique siempre en la parte izquierda de la pantalla*/
 width: 100%; /*100% para que ocupe todo el ancho del navegador*/
 }
+```
+
+### HTML5
+
+```bash
+&nsbp;        /*  espacio en blanco en html5 */
+```
+```bash
+<br/>         /*  salto de línea */
+```
+
+```bash
+<hr>            /*  línea		*/
+```
+```bash
+<strong>      /*    texto en negritas*/
+```
+```bash
+<em>             /* texto en cursivas*/
+```
+```bash
+<i>     /*   itálica (medio cursiva)*/
+```
+```bash
+<b>    negritas </b> /*  texto en negritas*/
+
+```
+```bash
+<u>…</u>subrayado
+<span >         maquetación
+<blockquote>    cita texto centrado
+
+<ol>   + <li> lista numerada 
+<ul>  +  <li> lista NO numerada
+border: 2px solid  rgb(8, 177, 154); 
+
+~/
+
+<img src="direccion" alt="sub título" title="padrino" 
+width="" height="200px"> imagenes
+
+<a href="https://www.google.com/" target="_blank" title="link machin"> Link</a>  /* abrir en nueva ventana */
+
+<span></span> /* etiqueta sin propiedad */
+
+<blockquote></blockquote> /* cita de texto */
+
+tabla 
+<table  border="1"  >
+        <tr>
+         <th>Nombre</th>
+         <td>Apellido</td>
+         <th>País</th>
+          
+          <tr>
+              <td>Juan</td>
+              <td colspan="2">Martínez</td>	
+          </tr>
+</table>
+
+poner un link 
+<a href="C:/Users/Salvador/Desktop/HTML/eje4.html" target="_blank">Contacto</a>
+```
+```bash
+<b> snippet de Emmet </b>
+```
+```bash
+multiplicar td*3
+
+multiplicador con varias etiquetas tr*2>td*3
+
+
+
 VARIABLES CCS
-git commit -m 'LEACAP-404 -se sube paquete marcaje prod' /* crear commit */
+
 :root {
 --variabley:32 px:
 @media screen and (min-width:770px){
@@ -268,8 +281,9 @@ setTimeout(()=>{
 document.getElementById('search-icon-legacyd').click();
 },2000);
 ```
-      ```bash          
-CSS GRID **************************************************************
+
+```bash          
+CSS GRID 
           /* declaracion del tipo de Dispaly */
         display: grid;
         /* ordenar los items */
