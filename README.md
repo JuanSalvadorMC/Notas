@@ -1,8 +1,6 @@
-# Notas
+# Notas / Comandos / codigos
 
-## Comandos
-
-### Captura de pantalla en Windows
+### Comando Captura de pantalla en Windows
 
 ```bash
 Windows + Shift + S
@@ -22,13 +20,16 @@ visibility: hidden;   /* Ocultar elemento */
 :nth-child(even){
   background-color: rgb(238, 238, 238);
 }
-////Selector general
+```
+
+```bash
+/* Selector general */
 *{
 }
 ```
 
+#### /* Alineación vertical y horizontal. */
 ```bash
-
 /* Alineación vertical y horizontal. */
 display: none;
 float: both;
@@ -38,8 +39,7 @@ float: left ---caja
   align-items: center;
   justify-content: center;
 }
-<td class="col-3 box">    <img [src]="liq.imagenes" class="img-thumbnail" alt="Responsive"></td>
-style="background-image:url('slide/ed-sheeran.jpg'">
+
 ```
 
 ```bash
@@ -70,6 +70,10 @@ dysplay: block;
     font-weight: bolder;
   text-transform: uppercase;----> mayuscula
 }
+```
+
+```bash
+border: 2px solid  rgb(8, 177, 154);
 ```
 
 ```bash
@@ -110,32 +114,29 @@ box-shadow: 2px 2px 17px 12px #117A65 ;
 height: 600px;
 font-weight: bold;
 font-family: Helvetica;
- height: 100vh;
+height: 100vh;
 git branch -a /* ver ramas existentes */
- position:absolute;
+position:absolute;
 git checkout LEACAP-384_integracion_bd /* cambio de rama */
-                top:50%;
-                left:50%; aliniar horizontal
+top:50%;
+left:50%; aliniar horizontal
+```
+```bash
 
 
-
-          object-fit: cover;
-  filter: brightness(80%);
-  cursor: pointer;
-  transition: 1s;
-
-                user-select: none;
-                 cursor: pointer;
-
-
-
-                //@ts-check
-
-
-                position: fixed; /*Fixed ya que queremos que la posición sea en relación al navegador*/
+object-fit: cover;
+filter: brightness(80%);
+cursor: pointer;
+transition: 1s;
+user-select: none;
+cursor: pointer;
+position: fixed; /*Fixed ya que queremos que la posición sea en re
+lación al navegador*/
 top: 0; /*El valor 0 indica que va a quedar arriba de todo*/
-git status /* ver cambios */
-git add . /* agregar todos los cambios */
+```
+```bash
+
+
 nav {
 git add PAQUETES/20220726_PAALTACAMPANIAS.TXT /* agregar solo un cambio */
 position: fixed; /*Fixed ya que queremos que la posición sea en relación al navegador*/
@@ -291,8 +292,9 @@ git push /* subir cambio */
 
 <ol>   + <li> lista numerada
 <ul>  +  <li> lista NO numerada
-border: 2px solid  rgb(8, 177, 154);
 
+<td class="col-3 box">    <img [src]="liq.imagenes" class="img-thumbnail" alt="Responsive"></td>
+style="background-image:url('slide/ed-sheeran.jpg'">
 ~/
 
 <img src="direccion" alt="sub título" title="padrino"
@@ -319,18 +321,6 @@ tabla
 
 poner un link
 <a href="C:/Users/Salvador/Desktop/HTML/eje4.html" target="_blank">Contacto</a>
-```
-
-```bash
-<b> snippet de Emmet </b>
-```
-
-```bash
-multiplicar td*3
-
-multiplicador con varias etiquetas tr*2>td*3
-
-
 ```
 
 ```bash
@@ -424,7 +414,29 @@ lenguajes.reverse(); /* muestra al revés */
 heroes.length == 0 &&
 ```
 
-### Otros comandos y atajos
+## VSCode & Snippet de Emmet 
+```bash
+multiplicar td*3
+
+multiplicador con varias etiquetas tr*2>td*3
+
+^ nivel arriba
+() agrupacion
+{}texto
+$ incrementar
+[] atributos
+
+Ctrl + Shift + S: Save As...
+Ctrl + K, S: Save All
+Shift + Alt + A: Comentar
+Ctrl + Shift + P: Opciones
+Lista de atajos de teclado: Ctrl + K + S
+Shift + Alt arriba / abajo: Copiar línea
+Ctrl + L: Selecciona toda la línea
+Ctrl + Alt + Clic: Multi cursores
+Ctrl + D: Multicursor
+
+```
 
 ```bash
 Abrir archivo: CTRL + O
@@ -457,20 +469,8 @@ Ctrl + Inicio: Ir al principio del archivo
 Alt + PgUp / PgDn: Desplazarse pantalla arriba / abajo
 Ctrl + Mayús + Tabulador: Navegar por el historial de archivos editados
 Alt + Flecha izquierda / Flecha derecha: Retroceder / avanzar en líneas editadas
-Ctrl + Shift + S: Save As...
-Ctrl + K, S: Save All
-Shift + Alt + A: Comentar
-Ctrl + Shift + P: Opciones
-Lista de atajos de teclado: Ctrl + K + S
-Shift + Alt arriba / abajo: Copiar línea
-Ctrl + L: Selecciona toda la línea
-Ctrl + Alt + Clic: Multi cursores
-Ctrl + D: Multicursor
-^ nivel arriba
-() agrupacion
-{}texto
-$ incrementar
-[] atributos
+
+
 ```
 
 ### GIT
@@ -496,6 +496,11 @@ git commit -m 'LEACAP-404 -se sube paquete marcaje prod' /* crear commit */
 git reset --soft HEAD~1 /* revertir commit */
 
 git push /* subir cambio */
+
+git status /* ver cambios */
+
+git add . /* agregar todos los cambios */
+
 ```
 
 ---
