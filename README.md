@@ -25,10 +25,10 @@ visibility: hidden;   /* Ocultar elemento */
 *{
 }
 ```
-		```bash
-<p> Alineación vertical y horizontal. </p>
-```
+
 ```bash
+
+//Alineación vertical y horizontal.
  display: none;
     float: both;
 float: left ---caja
@@ -142,6 +142,115 @@ width: 100%; /*100% para que ocupe todo el ancho del navegador*/
 }
 ```
 
+
+```bash          
+CSS GRID 
+          /* declaracion del tipo de Dispaly */
+        display: grid;
+        /* ordenar los items */
+        justify-content: space-evenly;
+        align-items: center;
+        /* Dimenciones internas del item */
+        justify-self: stretch;
+        justify-self: stretch;
+        /* delaracion de las columnas y filas */
+        grid-template-columns: 1fr 300px minmax(100px, 2fr);
+        grid-template-rows: repeat(100px, auto);
+        grid-template-areas: "header                 header                 header"
+                                                 "sidebar-1         contenido         sidebar-2"
+                                                 "sidebar-1         widgets         sidebar-2"
+                                                 "footer                 footer                 footer";
+                         /* separar items */
+        grid-gap: 20px;
+        /* espacio de los items */
+        grid-column: span 3;
+        grid-column-start: sidebar -1;
+        grid-column: sidebar -1;
+        grid-column-end: header;
+        grid-row: 1/4;
+        /* sub grid para alinear contenido interno de los items */
+        grid-template-rows: subgrid;
+        grid-template-columns: subgrid;
+        /* items implicitos o por default */
+        grid-auto-rows: 400px;
+        grid-auto-columns: 2fr;
+        /* orden de los items */
+        grid-auto-flow: row;
+        /* Rellenar espacios */
+        grid-auto-flow: dense;
+        /* convinacion de formatos de flow */
+        grid-auto-flow: column dense;
+        /* auto fill equivalente a un grap */
+        grid-template-columns: repeat(auto-fill,minmax(100px, 1fr));
+        /*  auto fit equivalente a un grap pero con tamaños dinamicos de item*/
+        grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+        /* auto fill equivalente a un grap */
+        grid-template-columns: repeat(auto-fill,minmax(100px, 1fr));
+        /* auto fit equivalente a un grap pero con tamaños dinamicos de item*/
+        grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+        /* auto fill equivalente a un grap */
+
+```
+```bash
+.grid{
+---
+display:grid;
+grid-template-columns:vas(--gColumns);
+grid-gap:var(--gGap);
+}
+position
+static//default
+realative // se mueve apartir de el contenedor en el que este
+absolute// se ensimay pierde su espaci en la pantalla
+fixed// se mueve partir de toda la pnatalla
+disable estilos
+------------------------------------------------
+.btn-colorRe:disabled,
+button[disabled]{
+  background: #ffffff !important;
+     border: 1px solid #999999;
+     background-color: #cccccc;
+     color: #666666 !important;
+}
+.btn-colorRe:disabled:hover,
+button[disabled]{
+  background: #ffffff !important;
+     border: 1px solid #999999;
+     background-color: #cccccc;
+     color: #666666 !important;
+}
+:root {
+  --azul: #1b3e69;
+  --gris:rgb(190, 190, 190);
+  --verde:#60b622;
+}
+        landscape horizontal
+        portrait vertical
+    @media screen and (orientation: portrait){
+        .precios{
+            width: 99%;
+            border-radius: 2px;
+        }
+    }
+console.log(`${porcentaje} = (${d.row(a)]/${opcional})`);
+         ```
+```bash
+## VARIABLES CCS
+
+:root {
+--variabley:32 px:
+@media screen and (min-width:770px){
+--variabley:42 px:
+}
+}
+font-size : var(--variabley);
+git reset --soft HEAD~1 /* revertir commit */
+--gColumns:repeat(4,1fr);
+git push /* subir cambio */
+--gGap:4rem;
+```
+
+
 ### HTML5
 
 ```bash
@@ -212,67 +321,11 @@ multiplicar td*3
 multiplicador con varias etiquetas tr*2>td*3
 
 
-
-VARIABLES CCS
-
-:root {
---variabley:32 px:
-@media screen and (min-width:770px){
---variabley:42 px:
-}
-}
-font-size : var(--variabley);
-git reset --soft HEAD~1 /* revertir commit */
---gColumns:repeat(4,1fr);
-git push /* subir cambio */
---gGap:4rem;
 ```
-```bash
-.grid{
----
-display:grid;
-grid-template-columns:vas(--gColumns);
-grid-gap:var(--gGap);
-}
-position
-static//default
-realative // se mueve apartir de el contenedor en el que este
-absolute// se ensimay pierde su espaci en la pantalla
-fixed// se mueve partir de toda la pnatalla
-disable estilos
-------------------------------------------------
-.btn-colorRe:disabled,
-button[disabled]{
-  background: #ffffff !important;
-     border: 1px solid #999999;
-     background-color: #cccccc;
-     color: #666666 !important;
-}
-.btn-colorRe:disabled:hover,
-button[disabled]{
-  background: #ffffff !important;
-     border: 1px solid #999999;
-     background-color: #cccccc;
-     color: #666666 !important;
-}
-:root {
-  --azul: #1b3e69;
-  --gris:rgb(190, 190, 190);
-  --verde:#60b622;
-}
-        landscape horizontal
-        portrait vertical
-    @media screen and (orientation: portrait){
-        .precios{
-            width: 99%;
-            border-radius: 2px;
-        }
-    }
-console.log(`${porcentaje} = (${d.row(a)]/${opcional})`);
-       ```
-   ```bash     
 
-        
+    
+
+   ```bash     
         
 document.getElementById('searchd').value='que onda ya lo automatice 3';
 ```
@@ -280,55 +333,6 @@ document.getElementById('searchd').value='que onda ya lo automatice 3';
 setTimeout(()=>{
 document.getElementById('search-icon-legacyd').click();
 },2000);
-```
-
-```bash          
-CSS GRID 
-          /* declaracion del tipo de Dispaly */
-        display: grid;
-        /* ordenar los items */
-        justify-content: space-evenly;
-        align-items: center;
-        /* Dimenciones internas del item */
-        justify-self: stretch;
-        justify-self: stretch;
-        /* delaracion de las columnas y filas */
-        grid-template-columns: 1fr 300px minmax(100px, 2fr);
-        grid-template-rows: repeat(100px, auto);
-        grid-template-areas: "header                 header                 header"
-                                                 "sidebar-1         contenido         sidebar-2"
-                                                 "sidebar-1         widgets         sidebar-2"
-                                                 "footer                 footer                 footer";
-                         /* separar items */
-        grid-gap: 20px;
-        /* espacio de los items */
-        grid-column: span 3;
-        grid-column-start: sidebar -1;
-        grid-column: sidebar -1;
-        grid-column-end: header;
-        grid-row: 1/4;
-        /* sub grid para alinear contenido interno de los items */
-        grid-template-rows: subgrid;
-        grid-template-columns: subgrid;
-        /* items implicitos o por default */
-        grid-auto-rows: 400px;
-        grid-auto-columns: 2fr;
-        /* orden de los items */
-        grid-auto-flow: row;
-        /* Rellenar espacios */
-        grid-auto-flow: dense;
-        /* convinacion de formatos de flow */
-        grid-auto-flow: column dense;
-        /* auto fill equivalente a un grap */
-        grid-template-columns: repeat(auto-fill,minmax(100px, 1fr));
-        /*  auto fit equivalente a un grap pero con tamaños dinamicos de item*/
-        grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
-        /* auto fill equivalente a un grap */
-        grid-template-columns: repeat(auto-fill,minmax(100px, 1fr));
-        /* auto fit equivalente a un grap pero con tamaños dinamicos de item*/
-        grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
-        /* auto fill equivalente a un grap */
-
 ```
 
 ### Angular
@@ -358,7 +362,7 @@ npm uninstall @angular-devkit/build-angular
 npm install @angular-devkit/build-angular@0.13.0
 ```
 
-### JavaScript
+###  JavaScript/ECMAScript
 
 ```bash
 <script>
