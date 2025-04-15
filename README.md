@@ -12,8 +12,10 @@ Windows + Shift + S
 
 ```bash
 display: block;
+```
+```bash
 visibility: hidden;   /* Ocultar elemento */
-
+```bash
 <br/>           salto de línea
 <hr>            línea		
 <strong>        texto en negritas
