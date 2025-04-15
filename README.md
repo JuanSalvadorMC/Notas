@@ -28,16 +28,12 @@ visibility: hidden;   /* Ocultar elemento */
 }
 ```
 
-#### /* Alineación vertical y horizontal. */
+#### Alineación vertical y horizontal.
 ```bash
-/* Alineación vertical y horizontal. */
-display: none;
-float: both;
-float: left ---caja
-.centrar{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.centrar {
+  display: flex; /* Activa Flexbox */
+  align-items: center;     /* Centra VERTICALMENTE */
+  justify-content: center; /* Centra HORIZONTALMENTE */
 }
 
 ```
@@ -121,9 +117,8 @@ git checkout LEACAP-384_integracion_bd /* cambio de rama */
 top:50%;
 left:50%; aliniar horizontal
 ```
+
 ```bash
-
-
 object-fit: cover;
 filter: brightness(80%);
 cursor: pointer;
@@ -135,79 +130,70 @@ lación al navegador*/
 top: 0; /*El valor 0 indica que va a quedar arriba de todo*/
 ```
 ```bash
-
-
 nav {
-git add PAQUETES/20220726_PAALTACAMPANIAS.TXT /* agregar solo un cambio */
-position: fixed; /*Fixed ya que queremos que la posición sea en relación al navegador*/
-top: 0; /*El valor 0 indica que va a quedar arriba de todo*/
-left: 0; /*Para que el menu se ubique siempre en la parte izquierda de la pantalla*/
-width: 100%; /*100% para que ocupe todo el ancho del navegador*/
+  position: fixed; /*Fixed ya que queremos que la posición sea en relación al navegador*/
+  top: 0; /*El valor 0 indica que va a quedar arriba de todo*/
+  left: 0; /*Para que el menu se ubique siempre en la parte izquierda de la pantalla*/
+  width: 100%; /*100% para que ocupe todo el ancho del navegador*/
 }
 ```
-
-```bash
-CSS GRID
-          /* declaracion del tipo de Dispaly */
-        display: grid;
-        /* ordenar los items */
-        justify-content: space-evenly;
-        align-items: center;
-        /* Dimenciones internas del item */
-        justify-self: stretch;
-        justify-self: stretch;
-        /* delaracion de las columnas y filas */
-        grid-template-columns: 1fr 300px minmax(100px, 2fr);
-        grid-template-rows: repeat(100px, auto);
-        grid-template-areas: "header                 header                 header"
-                                                 "sidebar-1         contenido         sidebar-2"
-                                                 "sidebar-1         widgets         sidebar-2"
-                                                 "footer                 footer                 footer";
-                         /* separar items */
-        grid-gap: 20px;
-        /* espacio de los items */
-        grid-column: span 3;
-        grid-column-start: sidebar -1;
-        grid-column: sidebar -1;
-        grid-column-end: header;
-        grid-row: 1/4;
-        /* sub grid para alinear contenido interno de los items */
-        grid-template-rows: subgrid;
-        grid-template-columns: subgrid;
-        /* items implicitos o por default */
-        grid-auto-rows: 400px;
-        grid-auto-columns: 2fr;
-        /* orden de los items */
-        grid-auto-flow: row;
-        /* Rellenar espacios */
-        grid-auto-flow: dense;
-        /* convinacion de formatos de flow */
-        grid-auto-flow: column dense;
-        /* auto fill equivalente a un grap */
-        grid-template-columns: repeat(auto-fill,minmax(100px, 1fr));
-        /*  auto fit equivalente a un grap pero con tamaños dinamicos de item*/
-        grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
-        /* auto fill equivalente a un grap */
-        grid-template-columns: repeat(auto-fill,minmax(100px, 1fr));
-        /* auto fit equivalente a un grap pero con tamaños dinamicos de item*/
-        grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
-        /* auto fill equivalente a un grap */
-
-```
-
+###📌 POSITION EN CSS 📌
 ````bash
-.grid{
----
-display:grid;
-grid-template-columns:vas(--gColumns);
-grid-gap:var(--gGap);
+/*  */
+
+/* 1. position: static (Valor por defecto) */
+.elemento-static {
+  position: static; /* Sigue el flujo normal del documento */
+  top: 20px; /* ⚠️ NO TIENE EFECTO (ignora top/right/bottom/left) */
 }
-position
-static//default
-realative // se mueve apartir de el contenedor en el que este
-absolute// se ensimay pierde su espaci en la pantalla
-fixed// se mueve partir de toda la pnatalla
-disable estilos
+/* Uso: Cuando quieres resetear la posición de un elemento */
+```
+```bash
+/* 2. position: relative */
+.elemento-relative {
+  position: relative; /* Mantiene su espacio en el flujo */
+  top: 20px; /* Se mueve 20px DESDE su posición original */
+  left: 30px; /* (Relativo a sí mismo) */
+  z-index: 1; /* 🎯 Permite controlar el apilamiento */
+}
+/* Uso: Ajustes finos de posición sin afectar otros elementos */
+
+/* 3. position: absolute */
+.elemento-absolute {
+  position: absolute; /* Sale del flujo normal (no ocupa espacio) */
+  top: 0; /* Se posiciona respecto al primer ancestro NO static */
+  right: 0; /* Si no hay, usa el viewport (como fixed) */
+  /* ⚠️ Necesita un contenedor con position: relative/absolute/fixed */
+}
+/* Uso: Menús desplegables, tooltips, elementos superpuestos */
+
+/* 4. position: fixed */
+.elemento-fixed {
+  position: fixed; /* Sale del flujo y se fija en la pantalla */
+  bottom: 20px; /* 20px desde el borde inferior del viewport */
+  right: 20px; /* No se mueve al hacer scroll */
+  /* 📱 Ideal para botones flotantes en móvil */
+}
+/* Uso: Chat de soporte, botones "volver arriba" */
+
+/* 5. position: sticky (¡Faltaba en tu lista!) */
+.elemento-sticky {
+  position: sticky; /* Híbrido entre relative y fixed */
+  top: 0; /* Se pega al borde cuando el scroll llega a su posición */
+  /* 🧠 Necesita un contenedor con overflow: visible */
+}
+/* Uso: Cabeceras de tabla, menús que siguen al scroll */
+
+/* 🚨 DISABLE ESTILOS (Corrección) */
+.boton-deshabilitado:disabled,
+.boton-deshabilitado[disabled] {
+  opacity: 0.6; /* Transparencia para indicar estado */
+  cursor: not-allowed; /* Cambia el cursor */
+  /* 🛑 No usar 'disable estilos' (nombre incorrecto) */
+  /* ✅ Correcto: :disabled o [disabled] */
+}
+```
+
 ------------------------------------------------
 .btn-colorRe:disabled,
 button[disabled]{
@@ -238,6 +224,7 @@ button[disabled]{
     }
 
          ```
+
 ```bash
 ## VARIABLES CCS
 
@@ -248,11 +235,69 @@ button[disabled]{
 }
 }
 font-size : var(--variabley);
-git reset --soft HEAD~1 /* revertir commit */
+
 --gColumns:repeat(4,1fr);
-git push /* subir cambio */
+
 --gGap:4rem;
 ````
+
+### CSS GRID
+```bash
+        /* declaracion del tipo de Dispaly */
+        display: grid;
+        /* ordenar los items */
+        justify-content: space-evenly;
+        align-items: center;
+        /* Dimenciones internas del item */
+        justify-self: stretch;
+        justify-self: stretch;
+        /* delaracion de las columnas y filas */
+        grid-template-columns: 1fr 300px minmax(100px, 2fr);
+        grid-template-rows: repeat(100px, auto);
+        grid-template-areas: "
+          header             header                 header"
+          "sidebar-1         contenido         sidebar-2"
+          "sidebar-1         widgets         sidebar-2"
+          "footer                 footer                 footer";
+        /* separar items */
+        grid-gap: 20px;
+        /* espacio de los items */
+        grid-column: span 3;
+        grid-column-start: sidebar -1;
+        grid-column: sidebar -1;
+        grid-column-end: header;
+        grid-row: 1/4;
+        /* sub grid para alinear contenido interno de los items */
+        grid-template-rows: subgrid;
+        grid-template-columns: subgrid;
+        /* items implicitos o por default */
+        grid-auto-rows: 400px;
+        grid-auto-columns: 2fr;
+        /* orden de los items */
+        grid-auto-flow: row;
+        /* Rellenar espacios */
+        grid-auto-flow: dense;
+        /* convinacion de formatos de flow */
+        grid-auto-flow: column dense;
+        /* auto fill equivalente a un grap */
+        grid-template-columns: repeat(auto-fill,minmax(100px, 1fr));
+        /*  auto fit equivalente a un grap pero con tamaños dinamicos de item*/
+        grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+        /* auto fill equivalente a un grap */
+        grid-template-columns: repeat(auto-fill,minmax(100px, 1fr));
+        /* auto fit equivalente a un grap pero con tamaños dinamicos de item*/
+        grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+        /* auto fill equivalente a un grap */
+
+
+        .grid{
+display:grid;
+grid-template-columns:vas(--gColumns);
+grid-gap:var(--gGap);
+}
+
+```
+
 
 ### HTML5
 
@@ -500,6 +545,12 @@ git push /* subir cambio */
 git status /* ver cambios */
 
 git add . /* agregar todos los cambios */
+
+git add PAQUETES/20220726_PAALTACAMPANIAS.TXT /* agregar solo un cambio */
+
+git reset --soft HEAD~1 /* revertir commit */
+
+git push /* subir cambio */
 
 ```
 
