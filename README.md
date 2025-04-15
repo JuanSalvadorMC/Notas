@@ -72,7 +72,8 @@ overflow-y: hidden; /* borrar scroll */
 ```bash
 
 /* aplica para todo */
-*{}```
+*{}
+```
 
 ```bash
 
@@ -288,35 +289,34 @@ font-size : var(--variabley);
   }
 ```
 
-
 ### HTML5
 
 ```bash
-&nsbp;        /*  espacio en blanco en html5 */
+&nsbp;      /*  espacio en blanco en html5 */
 ```
 
 ```bash
-<br/>         /*  salto de línea */
+<br/>       /*  salto de línea */
 ```
 
 ```bash
-<hr>            /*  línea		*/
+<hr>        /*  línea		*/
 ```
 
 ```bash
-<strong>      /*    texto en negritas*/
+<strong>    /*    texto en negritas*/
 ```
 
 ```bash
-<em>             /* texto en cursivas*/
+<em>        /* texto en cursivas*/
 ```
 
 ```bash
-<i>     /*   itálica (medio cursiva)*/
+<i>         /*   itálica (medio cursiva)*/
 ```
 
 ```bash
-<b>    negritas </b> /*  texto en negritas*/
+<b>negritas</b> /*  texto en negritas  /* 
 
 ```
 
@@ -324,23 +324,23 @@ font-size : var(--variabley);
 <u>…</u>subrayado
 ```
 ```bash
-<span >         maquetación
+<span >      /*   maquetación /*
 ```
 ```bash
-<blockquote>    cita texto centrado
+<blockquote>  /*  cita texto centrado /*
 ```
 ```bash
 
-<ol>   + <li> lista numerada
+<ol>   + <li> /* lista numerada /*
 ```
 ```bash
-<ul>  +  <li> lista NO numerada
+<ul>  +  <li> /* lista NO numerada /*
 ```
 ```bash
 <td class="col-3 box">    <img [src]="liq.imagenes" class="img-thumbnail" alt="Responsive"></td>
 ```
 ```bash
- <img " class="img-thumbnail" style="background-image:url('slide/ed-sheeran.jpg')">
+<img " class="img-thumbnail" style="background-image:url('slide/ed-sheeran.jpg')">
 ```
 ```bash
 <img src="direccion" alt="sub título" title="padrino"
@@ -360,14 +360,14 @@ width="" height="200px"> imagenes
 ```bash
 /* Tabla */
 <table  border="1"  >
-        <tr>
-         <th>Nombre</th>
-         <td>Apellido</td>
-         <th>País</th>
-          <tr>
-              <td>Juan</td>
-              <td colspan="2">Martínez</td>
-          </tr>
+  <tr>
+    <th>Nombre</th>
+    <td>Apellido</td>
+    <th>País</th>
+      <tr>
+        <td>Juan</td>
+        <td colspan="2">Martínez</td>
+      </tr>
 </table>
 ```
 
@@ -376,21 +376,15 @@ width="" height="200px"> imagenes
 ```
 
 ```bash
-document.getElementById('searchd').value='que onda ya lo automatice 3';
+document.getElementById('searchd').value='que onda ya lo automatice 3'; /* Asignar valor */
 ```
 
 ### Angular
-
 ```bash
-Swal.fire(
-  'Good job!',
-  'You clicked the button!',
-  'success'
-);
+npm install @angular-devkit/build-angular@0.13.0
 ```
-
 ```bash
-slc -- limpiar consola
+cls -- limpiar consola
 ```
 ```bash
 ng new newapp --skipTests
@@ -422,9 +416,15 @@ eliminar carpeta node_modules
 ```bash
 npm uninstall @angular-devkit/build-angular
 ```
+
 ```bash
-npm install @angular-devkit/build-angular@0.13.0
+Swal.fire(
+  'Good job!',
+  'You clicked the button!',
+  'success'
+);
 ```
+
 
 ### JavaScript/ECMAScript
 
@@ -436,7 +436,7 @@ console.log(`${porcentaje} = (${d.row(a)]/${opcional})`);
 ```bash
 setTimeout(()=>{
 document.getElementById('search-icon-legacyd').click();
-},2000);
+},2000); /* setTimeOut */
 ```
 
 ```bash
@@ -454,17 +454,21 @@ document.getElementById('search-icon-legacyd').click();
 alert("alerta navegador sencilla");
 
 'use strict'
+```
 
-let ////vive solo en el bloque(llaves) donde es declarada
-var /// vive en todo el código
-const // no puede ser modificada
+```bash
+let /*vive solo en el bloque(llaves) donde es declarada */
+var /* vive en todo el código */
+const /* no puede ser modificada */
 
 Number(X); /* transforma números string a enteros */
 parseInt(X); /* transforma números string a enteros */
 parseFloat(X); /* transforma números decimal string a decimal */
 String(X); /* transforma números a string */
 .toString(); /* transforma números a string */
+```
 
+```bash
 debugger; /* cap.27 bucle for master JavaScript */
 
 typeof // ver el tipo de dato
@@ -472,11 +476,15 @@ isNaN(numero1) // devuelve true o false si la var es diferente de int
 
 var texto = "hola";
 var numero = "23435";
+```
 
+```bash
 /* guardar en local storage */
 localStorage.setItem("usuarioBase", validar);
 usuarioBase = localStorage.getItem("usuarioBase");
+```
 
+```bash
 console.log(texto.toString());
 console.log(texto.toLowerCase());
 console.log(texto.toUpperCase());
