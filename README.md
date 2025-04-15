@@ -39,20 +39,6 @@ visibility: hidden;   /* Ocultar elemento */
 ```
 
 ```bash
-/* Selector de etiqueta */
-h1 {
-}
-body footer h1 {
-}
-/*  Selector de id  */
-#id{
-}
-/*  Selector de clase class */
-.class class1{
-}
-/*  Selector de atributo  */
-#selector etiqueta {
-}
 input[type="text"]{
     margin: auto;
 }
@@ -138,7 +124,7 @@ nav {
 }
 ```
 ### 📌 POSITION EN CSS 📌
-````bash
+```bash
 /* 1. position: static (Valor por defecto) */
 .elemento-static {
   position: static; /* Sigue el flujo normal del documento */
@@ -155,7 +141,8 @@ nav {
   z-index: 1; /* 🎯 Permite controlar el apilamiento */
 }
 /* Uso: Ajustes finos de posición sin afectar otros elementos */
-
+```
+```bash
 /* 3. position: absolute */
 .elemento-absolute {
   position: absolute; /* Sale del flujo normal (no ocupa espacio) */
@@ -164,7 +151,8 @@ nav {
   /* ⚠️ Necesita un contenedor con position: relative/absolute/fixed */
 }
 /* Uso: Menús desplegables, tooltips, elementos superpuestos */
-
+```
+```bash
 /* 4. position: fixed */
 .elemento-fixed {
   position: fixed; /* Sale del flujo y se fija en la pantalla */
@@ -173,7 +161,8 @@ nav {
   /* 📱 Ideal para botones flotantes en móvil */
 }
 /* Uso: Chat de soporte, botones "volver arriba" */
-
+```
+```bash
 /* 5. position: sticky (¡Faltaba en tu lista!) */
 .elemento-sticky {
   position: sticky; /* Híbrido entre relative y fixed */
@@ -181,7 +170,8 @@ nav {
   /* 🧠 Necesita un contenedor con overflow: visible */
 }
 /* Uso: Cabeceras de tabla, menús que siguen al scroll */
-
+```
+```bash
 /* 🚨 DISABLE ESTILOS (Corrección) */
 .boton-deshabilitado:disabled,
 .boton-deshabilitado[disabled] {
@@ -201,6 +191,8 @@ button[disabled]{
      background-color: #cccccc;
      color: #666666 !important;
 }
+```
+```bash
 .btn-colorRe:disabled:hover,
 button[disabled]{
   background: #ffffff !important;
@@ -208,20 +200,31 @@ button[disabled]{
      background-color: #cccccc;
      color: #666666 !important;
 }
+```
+```bash
 :root {
   --azul: #1b3e69;
   --gris:rgb(190, 190, 190);
   --verde:#60b622;
 }
-        landscape horizontal
-        portrait vertical
+```
+```bash
+      orientation:  landscape horizontal
+      orientation:  portrait vertical
     @media screen and (orientation: portrait){
-        .precios{
-            width: 99%;
-            border-radius: 2px;
-        }
+       /* Codigo */
     }
+    ```
+```bash
+    @media screen and (orientation: landscape){
+       /* Codigo */
+    }
+    ```
+```bash
 
+    @media screen and (orientation: viewport){
+       /* Codigo */
+    }
          ```
 
 ```bash
@@ -235,13 +238,14 @@ button[disabled]{
 }
 font-size : var(--variabley);
 
---gColumns:repeat(4,1fr);
 
---gGap:4rem;
 ````
 
 ### CSS GRID
 ```bash
+        --gColumns:repeat(4,1fr);
+
+        --gGap:4rem;
         /* declaracion del tipo de Dispaly */
         display: grid;
         /* ordenar los items */
@@ -287,8 +291,8 @@ font-size : var(--variabley);
         /* auto fit equivalente a un grap pero con tamaños dinamicos de item*/
         grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
         /* auto fill equivalente a un grap */
-
-
+```
+```bash
         .grid{
 display:grid;
 grid-template-columns:vas(--gColumns);
