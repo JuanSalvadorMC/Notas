@@ -13,16 +13,28 @@ Windows + Shift + S
 ```bash
 display: block;
 ```
+ /* Ocultar elemento */
 ```bash
 visibility: hidden;   /* Ocultar elemento */
+```
 ```bash
-<br/>           salto de línea
+<br/>         /*  salto de línea */
+```
+```bash
 <hr>            línea		
+```
+```bash
 <strong>        texto en negritas
+```
+```bash
 <em>            texto en cursivas
+```
+```bash
 <i>      itálica (medio cursiva)
+```
+```bash
 <b>    negritas
-<u>…</u>subrayado
+```<u>…</u>subrayado
 <span >         maquetación
 <blockquote>    cita texto centrado
 
