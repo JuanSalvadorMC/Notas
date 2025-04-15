@@ -70,12 +70,19 @@ Importar fuentes descargadas
 ```bash
 
 overflow-y: hidden; /* borrar scroll */
+```
+
+```bash
 
 /* aplica para todo */
-*{}
+*{}```
+
+```bash
 
 float:none /* sin reglas */
+```
 
+```bash
 .titulo{
   color: white;
   margin: 80px auto 80px auto;
@@ -84,20 +91,12 @@ float:none /* sin reglas */
   border-radius: 16px;
   text-align: center;
 }
-
-color: #F2F3F4; /* color letra */
-box-shadow: 2px 2px 17px 12px #117A65 ;
-height: 600px;
-font-weight: bold;
-font-family: Helvetica;
-height: 100vh;
-git branch -a /* ver ramas existentes */
-position:absolute;
-git checkout LEACAP-384_integracion_bd /* cambio de rama */
-top:50%;
-left:50%; aliniar horizontal
 ```
 
+```bash
+box-shadow: 2px 2px 17px 12px #117A65 ;
+```
+### Acomodar Imagen
 ```bash
 object-fit: cover;
 filter: brightness(80%);
@@ -117,7 +116,7 @@ nav {
   width: 100%; /*100% para que ocupe todo el ancho del navegador*/
 }
 ```
-### 📌 POSITION EN CSS 📌
+### POSITION EN CSS 📌
 ```bash
 /* 1. position: static (Valor por defecto) */
 .elemento-static {
@@ -178,21 +177,19 @@ nav {
 
 
 ```bash
-.btn-colorRe:disabled,
-button[disabled]{
+.btn-colorRe:disabled,button[disabled]{
   background: #ffffff !important;
-     border: 1px solid #999999;
-     background-color: #cccccc;
-     color: #666666 !important;
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666 !important;
 }
 ```
 ```bash
-.btn-colorRe:disabled:hover,
-button[disabled]{
+.btn-colorRe:disabled:hover,button[disabled]{
   background: #ffffff !important;
-     border: 1px solid #999999;
-     background-color: #cccccc;
-     color: #666666 !important;
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666 !important;
 }
 ```
 ```bash
@@ -202,53 +199,49 @@ button[disabled]{
   --verde:#60b622;
 }
 ```
+#### Media querys
 ```bash
-      orientation:  landscape horizontal
-      orientation:  portrait vertical
-
-      media query
-@media screen and (min-width:600px){
-    body{
-     background: yellow;
-    }
-}
+    @media screen and (min-width:600px){
+   /* Codigo */
+  }
 ```
 ```bash
     @media screen and (orientation: portrait){
        /* Codigo */
     }
-    ```
+```
 ```bash
     @media screen and (orientation: landscape){
        /* Codigo */
     }
-    ```
+```
 ```bash
 
     @media screen and (orientation: viewport){
        /* Codigo */
     }
-         ```
+```
 
 ```bash
 ## VARIABLES CCS
 
 :root {
 --variabley:32 px:
-@media screen and (min-width:770px){
---variabley:42 px:
-}
+  @media screen and (min-width:770px){
+  --variabley:42 px:
+  }
 }
 font-size : var(--variabley);
 
-
-````
+```
 
 ### CSS GRID
 ```bash
         --gColumns:repeat(4,1fr);
-
         --gGap:4rem;
+  ```
+
+```bash
         /* declaracion del tipo de Dispaly */
         display: grid;
         /* ordenar los items */
@@ -296,12 +289,11 @@ font-size : var(--variabley);
         /* auto fill equivalente a un grap */
 ```
 ```bash
-        .grid{
-display:grid;
-grid-template-columns:vas(--gColumns);
-grid-gap:var(--gGap);
-}
-
+  .grid{
+    display:grid;
+    grid-template-columns:vas(--gColumns);
+    grid-gap:var(--gGap);
+  }
 ```
 
 
@@ -354,7 +346,9 @@ grid-gap:var(--gGap);
 ```
 ```bash
 <td class="col-3 box">    <img [src]="liq.imagenes" class="img-thumbnail" alt="Responsive"></td>
-style="background-image:url('slide/ed-sheeran.jpg'">
+```
+```bash
+ <img " class="img-thumbnail" style="background-image:url('slide/ed-sheeran.jpg')">
 ```
 ```bash
 <img src="direccion" alt="sub título" title="padrino"
@@ -366,19 +360,18 @@ width="" height="200px"> imagenes
 ```bash
 <span></span> /* etiqueta sin propiedad */
 ```
-#### Cita de texto
+
 ```bash
 <blockquote></blockquote> /* cita de texto */
 ```
 
-#### Tabla
 ```bash
+/* Tabla */
 <table  border="1"  >
         <tr>
          <th>Nombre</th>
          <td>Apellido</td>
          <th>País</th>
-
           <tr>
               <td>Juan</td>
               <td colspan="2">Martínez</td>
@@ -400,6 +393,7 @@ setTimeout(()=>{
 document.getElementById('search-icon-legacyd').click();
 },2000);
 ```
+
 
 ### Angular
 
@@ -434,9 +428,6 @@ ng serve -c qa
 ```
 ```bash
 ng serve --configuration=qa
-```
-```bash
-
 ```
 ```bash
 npm audit fix
