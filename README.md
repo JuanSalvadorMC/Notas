@@ -1,9 +1,9 @@
-
 # Notas
 
 ## Comandos
 
 ### Captura de pantalla en Windows
+
 ```bash
 Windows + Shift + S
 ```
@@ -17,6 +17,7 @@ display: block;  /* Ocupa todo el ancho disponible al 100% */
 ```bash
 visibility: hidden;   /* Ocultar elemento */
 ```
+
 ```bash
 :nth-child(even){
   background-color: rgb(238, 238, 238);
@@ -28,9 +29,9 @@ visibility: hidden;   /* Ocultar elemento */
 
 ```bash
 
-//Alineación vertical y horizontal.
- display: none;
-    float: both;
+/* Alineación vertical y horizontal. */
+display: none;
+float: both;
 float: left ---caja
 .centrar{
   display: flex;
@@ -47,19 +48,19 @@ h1 {
 }
 body footer h1 {
 }
-////Selector de id
+/*  Selector de id  */
 #id{
 }
-////Selector de clase class
+/*  Selector de clase class */
 .class class1{
 }
-////Selector de atributo
+/*  Selector de atributo  */
 #selector etiqueta {
 }
 input[type="text"]{
     margin: auto;
 }
-////Selectores hijos o por nivel solo se aplica a etiiquetas del nivel esepecificado
+/*  Selectores hijos o por nivel solo se aplica a etiiquetas del nivel esepecificado  */
 #selector ul> li> a {
 }
 dysplay: block;
@@ -69,13 +70,14 @@ dysplay: block;
     font-weight: bolder;
   text-transform: uppercase;----> mayuscula
 }
-dashes= punteeado
-CSS sigue un sitema similar a la programacion las lineas escritas al final de el codigo son las que definiran las propiedades finales
+```
+
+```bash
 Importar fuentes descargadas
 @font-face{
     src: ;
     font-family: ;
-}
+  }
 media query
 @media screen and (min-width:600px){
     body{
@@ -83,8 +85,9 @@ media query
     }
 }
 
+```
 
-
+```bash
 
 overflow-y: hidden; /* borrar scroll */
 
@@ -113,22 +116,22 @@ git branch -a /* ver ramas existentes */
 git checkout LEACAP-384_integracion_bd /* cambio de rama */
                 top:50%;
                 left:50%; aliniar horizontal
-                
-                
-                
+
+
+
           object-fit: cover;
   filter: brightness(80%);
   cursor: pointer;
-  transition: 1s;        
-                
+  transition: 1s;
+
                 user-select: none;
                  cursor: pointer;
-                
-                
-                
+
+
+
                 //@ts-check
-                
-                
+
+
                 position: fixed; /*Fixed ya que queremos que la posición sea en relación al navegador*/
 top: 0; /*El valor 0 indica que va a quedar arriba de todo*/
 git status /* ver cambios */
@@ -142,9 +145,8 @@ width: 100%; /*100% para que ocupe todo el ancho del navegador*/
 }
 ```
 
-
-```bash          
-CSS GRID 
+```bash
+CSS GRID
           /* declaracion del tipo de Dispaly */
         display: grid;
         /* ordenar los items */
@@ -191,7 +193,8 @@ CSS GRID
         /* auto fill equivalente a un grap */
 
 ```
-```bash
+
+````bash
 .grid{
 ---
 display:grid;
@@ -232,7 +235,7 @@ button[disabled]{
             border-radius: 2px;
         }
     }
-console.log(`${porcentaje} = (${d.row(a)]/${opcional})`);
+
          ```
 ```bash
 ## VARIABLES CCS
@@ -248,14 +251,14 @@ git reset --soft HEAD~1 /* revertir commit */
 --gColumns:repeat(4,1fr);
 git push /* subir cambio */
 --gGap:4rem;
-```
-
+````
 
 ### HTML5
 
 ```bash
 &nsbp;        /*  espacio en blanco en html5 */
 ```
+
 ```bash
 <br/>         /*  salto de línea */
 ```
@@ -263,31 +266,36 @@ git push /* subir cambio */
 ```bash
 <hr>            /*  línea		*/
 ```
+
 ```bash
 <strong>      /*    texto en negritas*/
 ```
+
 ```bash
 <em>             /* texto en cursivas*/
 ```
+
 ```bash
 <i>     /*   itálica (medio cursiva)*/
 ```
+
 ```bash
 <b>    negritas </b> /*  texto en negritas*/
 
 ```
+
 ```bash
 <u>…</u>subrayado
 <span >         maquetación
 <blockquote>    cita texto centrado
 
-<ol>   + <li> lista numerada 
+<ol>   + <li> lista numerada
 <ul>  +  <li> lista NO numerada
-border: 2px solid  rgb(8, 177, 154); 
+border: 2px solid  rgb(8, 177, 154);
 
 ~/
 
-<img src="direccion" alt="sub título" title="padrino" 
+<img src="direccion" alt="sub título" title="padrino"
 width="" height="200px"> imagenes
 
 <a href="https://www.google.com/" target="_blank" title="link machin"> Link</a>  /* abrir en nueva ventana */
@@ -296,25 +304,27 @@ width="" height="200px"> imagenes
 
 <blockquote></blockquote> /* cita de texto */
 
-tabla 
+tabla
 <table  border="1"  >
         <tr>
          <th>Nombre</th>
          <td>Apellido</td>
          <th>País</th>
-          
+
           <tr>
               <td>Juan</td>
-              <td colspan="2">Martínez</td>	
+              <td colspan="2">Martínez</td>
           </tr>
 </table>
 
-poner un link 
+poner un link
 <a href="C:/Users/Salvador/Desktop/HTML/eje4.html" target="_blank">Contacto</a>
 ```
+
 ```bash
 <b> snippet de Emmet </b>
 ```
+
 ```bash
 multiplicar td*3
 
@@ -323,12 +333,11 @@ multiplicador con varias etiquetas tr*2>td*3
 
 ```
 
-    
+```bash
 
-   ```bash     
-        
 document.getElementById('searchd').value='que onda ya lo automatice 3';
 ```
+
 ```bash
 setTimeout(()=>{
 document.getElementById('search-icon-legacyd').click();
@@ -355,14 +364,18 @@ ng g c newcomponent-is --skipTests
 ng g m modules
 ng serve -c qa
 ng serve --configuration=qa
-	
+
 npm audit fix
 eliminar carpeta node_modules
 npm uninstall @angular-devkit/build-angular
 npm install @angular-devkit/build-angular@0.13.0
 ```
 
-###  JavaScript/ECMAScript
+### JavaScript/ECMAScript
+
+```bash
+console.log(`${porcentaje} = (${d.row(a)]/${opcional})`);
+```
 
 ```bash
 <script>
@@ -394,7 +407,7 @@ var texto = "hola";
 var numero = "23435";
 
 /* guardar en local storage */
-localStorage.setItem("usuarioBase", validar); 
+localStorage.setItem("usuarioBase", validar);
 usuarioBase = localStorage.getItem("usuarioBase");
 
 console.log(texto.toString());
@@ -449,12 +462,12 @@ Ctrl + K, S: Save All
 Shift + Alt + A: Comentar
 Ctrl + Shift + P: Opciones
 Lista de atajos de teclado: Ctrl + K + S
-Shift + Alt arriba / abajo: Copiar línea 
+Shift + Alt arriba / abajo: Copiar línea
 Ctrl + L: Selecciona toda la línea
 Ctrl + Alt + Clic: Multi cursores
 Ctrl + D: Multicursor
 ^ nivel arriba
-() agrupacion        
+() agrupacion
 {}texto
 $ incrementar
 [] atributos
@@ -466,7 +479,7 @@ $ incrementar
 git pull  /* actualiza repositorio local */
 git checkout  /* verifica la rama en la que te encuentras */
 
-git clone https://gitlab.colaboracionsimba.net/captacion/sistemas-centrales-captacion/portalplataformacampanias/bdplataformacampanias.git
+git clone https://gitlab.colaboracionsimba.net/campanias/bdplataformacampanias.git
 
 git branch -a /* ver ramas existentes */
 
