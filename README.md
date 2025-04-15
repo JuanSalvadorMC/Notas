@@ -137,10 +137,8 @@ nav {
   width: 100%; /*100% para que ocupe todo el ancho del navegador*/
 }
 ```
-###📌 POSITION EN CSS 📌
+### 📌 POSITION EN CSS 📌
 ````bash
-/*  */
-
 /* 1. position: static (Valor por defecto) */
 .elemento-static {
   position: static; /* Sigue el flujo normal del documento */
@@ -194,7 +192,8 @@ nav {
 }
 ```
 
-------------------------------------------------
+
+```bash
 .btn-colorRe:disabled,
 button[disabled]{
   background: #ffffff !important;
@@ -332,10 +331,18 @@ grid-gap:var(--gGap);
 
 ```bash
 <u>…</u>subrayado
+```
+```bash
 <span >         maquetación
+```
+```bash
 <blockquote>    cita texto centrado
+```
+```bash
 
 <ol>   + <li> lista numerada
+```
+```bash
 <ul>  +  <li> lista NO numerada
 ```
 ```bash
@@ -351,10 +358,14 @@ width="" height="200px"> imagenes
 ```
 ```bash
 <span></span> /* etiqueta sin propiedad */
-
+```
+#### Cita de texto
+```bash
 <blockquote></blockquote> /* cita de texto */
+```
 
-tabla
+#### Tabla
+```bash
 <table  border="1"  >
         <tr>
          <th>Nombre</th>
@@ -366,13 +377,14 @@ tabla
               <td colspan="2">Martínez</td>
           </tr>
 </table>
+```
 
-poner un link
+#### Adjuntar link
+```bash
 <a href="C:/Users/Salvador/Desktop/HTML/eje4.html" target="_blank">Contacto</a>
 ```
 
 ```bash
-
 document.getElementById('searchd').value='que onda ya lo automatice 3';
 ```
 
@@ -394,23 +406,47 @@ Swal.fire(
 
 ```bash
 slc -- limpiar consola
-ng new newapp
---skipTests
+```
+```bash
+ng new newapp --skipTests
+```
+```bash
 ng serve --port 4201
+```
+```bash
 ng serve -o
+```
+```bash
 ng g c newcomponent-is --skipTests
+```
+```bash
 ng g m modules
+```
+```bash
 ng serve -c qa
+```
+```bash
 ng serve --configuration=qa
+```
+```bash
 
+```
+```bash
 npm audit fix
+```
+```bash
 eliminar carpeta node_modules
+```
+```bash
 npm uninstall @angular-devkit/build-angular
+```
+```bash
 npm install @angular-devkit/build-angular@0.13.0
 ```
 
 ### JavaScript/ECMAScript
 
+##### template string
 ```bash
 console.log(`${porcentaje} = (${d.row(a)]/${opcional})`);
 ```
@@ -459,10 +495,9 @@ console.log(texto.concat(numero)); /* concatenar */
 lenguajes.sort(); /* muestra por orden alfabético */
 lenguajes.reverse(); /* muestra al revés */
 
-heroes.length == 0 &&
 ```
 
-## VSCode & Snippet de Emmet 
+## VS Code & Snippet de Emmet 
 ```bash
 multiplicar td*3
 
@@ -525,6 +560,7 @@ Alt + Flecha izquierda / Flecha derecha: Retroceder / avanzar en líneas editada
 
 ```bash
 git pull  /* actualiza repositorio local */
+
 git checkout  /* verifica la rama en la que te encuentras */
 
 git clone https://gitlab.colaboracionsimba.net/campanias/bdplataformacampanias.git
