@@ -64,12 +64,6 @@ Importar fuentes descargadas
     src: ;
     font-family: ;
   }
-media query
-@media screen and (min-width:600px){
-    body{
-     background: yellow;
-    }
-}
 
 ```
 
@@ -211,6 +205,15 @@ button[disabled]{
 ```bash
       orientation:  landscape horizontal
       orientation:  portrait vertical
+
+      media query
+@media screen and (min-width:600px){
+    body{
+     background: yellow;
+    }
+}
+```
+```bash
     @media screen and (orientation: portrait){
        /* Codigo */
     }
