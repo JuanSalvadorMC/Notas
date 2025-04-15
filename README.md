@@ -35,22 +35,19 @@ visibility: hidden;   /* Ocultar elemento */
   align-items: center;     /* Centra VERTICALMENTE */
   justify-content: center; /* Centra HORIZONTALMENTE */
 }
-
 ```
-
 ```bash
 input[type="text"]{
     margin: auto;
 }
-/*  Selectores hijos o por nivel solo se aplica a etiiquetas del nivel esepecificado  */
-#selector ul> li> a {
-}
-dysplay: block;
+```
+```bash
+/* Estilos de texto */
 *{
     font-style: italic;
     text-decoration: underline;
     font-weight: bolder;
-  text-transform: uppercase;----> mayuscula
+    text-transform: uppercase;----> mayuscula
 }
 ```
 
@@ -83,14 +80,9 @@ float:none /* sin reglas */
 ```
 
 ```bash
-.titulo{
-  color: white;
-  margin: 80px auto 80px auto;
-  font-size: 40px;
-  text-shadow: 2px 2px 17px #117A65 ;
-  border-radius: 16px;
-  text-align: center;
-}
+
+  text-shadow: 2px 2px 17px #000000; /*sobra texto */;
+
 ```
 
 ```bash
@@ -379,21 +371,13 @@ width="" height="200px"> imagenes
 </table>
 ```
 
-#### Adjuntar link
 ```bash
-<a href="C:/Users/Salvador/Desktop/HTML/eje4.html" target="_blank">Contacto</a>
+<a href="C:/Users/Salvador/Desktop/HTML/eje4.html" target="_blank">Contacto</a> /* Adjuntar link */
 ```
 
 ```bash
 document.getElementById('searchd').value='que onda ya lo automatice 3';
 ```
-
-```bash
-setTimeout(()=>{
-document.getElementById('search-icon-legacyd').click();
-},2000);
-```
-
 
 ### Angular
 
@@ -450,12 +434,23 @@ console.log(`${porcentaje} = (${d.row(a)]/${opcional})`);
 ```
 
 ```bash
+setTimeout(()=>{
+document.getElementById('search-icon-legacyd').click();
+},2000);
+```
+
+```bash
+  /* template de JavaScript en html */
 <script>
 </script>
+```
 
-<script type="text/javascript" src="/ruta">
-</script>
+```bash
+<script type="text/javascript" src="/ruta" />
+```
 
+```bash
+ /* Alerta en JS */
 alert("alerta navegador sencilla");
 
 'use strict'
