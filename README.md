@@ -1,5 +1,28 @@
 # Notas / Comandos / codigos
 
+### React
+
+```bash
+
+npx create-react-app mi-primer-app
+
+npx yarn start
+
+npm create vite@latest my-react-app
+
+npm create vite@5.2.3 my-react-app
+
+ cd react-app   
+  npm install    
+  npm run dev
+
+
+npm i -s styled-components
+
+npm creat-next-app <NOMBRE DE TU APP>
+```
+
+
 ### Comando Captura de pantalla en Windows
 
 ```bash
@@ -591,6 +614,85 @@ git add PAQUETES/20220726_PAALTACAMPANIAS.TXT /* agregar solo un cambio */
 git reset --soft HEAD~1 /* revertir commit */
 
 git push /* subir cambio */
+
+```
+
+---
+### Node Version Manager (NVM)
+
+```bash
+-------------------------------------Node Version Manager
+--MacOs/linux
+# 📌 Verificar si NVM está instalado
+nvm --version
+
+# 📌 Ver versiones disponibles de Node.js
+nvm ls-remote
+
+# 📌 Instalar una versión específica de Node.js
+nvm install 18.17.0
+
+# 📌 Ver versiones instaladas en el sistema
+nvm list
+
+# 📌 Usar una versión específica de Node.js
+nvm use 18.17.0
+
+# 📌 Establecer una versión predeterminada al abrir la terminal
+nvm alias default 18.17.0
+
+# 📌 Eliminar una versión instalada
+nvm uninstall 18.17.0
+
+# 📌 Ver la versión activa de Node.js y npm
+node -v
+npm -v
+
+# 🍏 Linux/macOS (nvm-sh)
+nvm list available
+
+
+  ---------------
+-------------    WIndows  
+
+# 📌 Ver versiones de Node.js disponibles para instalar
+# 🖥️ Windows (nvm-windows)
+nvm list available
+
+
+ # 📌 Verificar si NVM está instalado
+nvm version
+
+# 📌 Ver versiones disponibles de Node.js
+nvm list available
+
+# 📌 Instalar una versión específica de Node.js
+nvm install 18.17.0
+
+# 📌 Ver versiones instaladas en el sistema
+nvm list
+
+# 📌 Usar una versión específica de Node.js
+nvm use 18.17.0
+
+# 📌 Establecer una versión predeterminada
+nvm use 18.17.0
+
+# 📌 Eliminar una versión instalada
+nvm uninstall 18.17.0
+
+# 📌 Ver la versión activa de Node.js y npm
+node -v
+npm -v
+--------------------------------------   vscode
+Para cambiar el atajo de la terminal en VS Code, sigue estos pasos:
+
+1️ Abrir la configuración de atajos de teclado
+Presiona:
+
+Ctrl + K, Ctrl + S
+
+
 
 ```
 
