@@ -696,4 +696,12 @@ Ctrl + K, Ctrl + S
 
 ```
 
+##### Node js
+```bash
+nodae -v
+```
+
+```bash
+npm star
+```
 ---
