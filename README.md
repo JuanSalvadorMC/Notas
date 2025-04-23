@@ -614,8 +614,20 @@ git add PAQUETES/20220726_PAALTACAMPANIAS.TXT /* agregar solo un cambio */
 git reset --soft HEAD~1 /* revertir commit */
 
 git push /* subir cambio */
-
 ```
+
+### ✅ Pasos para eliminar node_modules/ del control de versiones
+Asegúrate de que esté en tu .gitignore
+
+```bash
+echo "node_modules/" >> .gitignore
+```
+Elimina node_modules/ del seguimiento de Git (sin borrar la carpeta local):
+
+```bash
+git rm -r --cached node_modules/
+```
+
 
 ---
 ### Node Version Manager (NVM)
